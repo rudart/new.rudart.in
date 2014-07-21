@@ -5,4 +5,4 @@
  * @author Alexey Salnikov <me@iamsalnikov.ru>
  */
 
-`./deploy.sh`;
+`/bin/bash deploy.sh`;
