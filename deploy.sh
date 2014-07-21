@@ -1,6 +1,5 @@
 #!/bin/bash
 
-/usr/local/rvm/bin/rvm use 2.0-dev
 git pull
 rm -rf build
 cd src/site
