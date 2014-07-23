@@ -64,33 +64,33 @@ layout: homepage
       <section class="dart-new-language sec-shadow" id="code">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-            <h2>Dart is new, yet familiar</h2>
+            <h2>Dart новый, но знакомый</h2>
 
             <div id="dart-language-carousel" class="carousel slide dart-carousel" data-interval="false">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#dart-language-carousel" data-slide-to="0" class="active">Easy to learn</li>
-                <li data-target="#dart-language-carousel" data-slide-to="1">Concise</li>
-                <li data-target="#dart-language-carousel" data-slide-to="2">Optionally typed</li>
-                <li data-target="#dart-language-carousel" data-slide-to="3">Modular</li>
+                <li data-target="#dart-language-carousel" data-slide-to="0" class="active">Легок в изучении</li>
+                <li data-target="#dart-language-carousel" data-slide-to="1">Краткий</li>
+                <li data-target="#dart-language-carousel" data-slide-to="2">Типы не обязательны</li>
+                <li data-target="#dart-language-carousel" data-slide-to="3">Модульный</li>
               </ol>
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <p>You can probably already read and even write Dart code. <a href="/samples/">See more samples.</a> </p>
+                  <p>Возможно, вы уже можете читать и писать код на Dart. <a href="/samples/">Больше примеров.</a> </p>
                   <div class="code-hldr">
 <pre class="prettyprint lang-dart">
-import 'dart:math' show Random;        // Import a class from a library.
+import 'dart:math' show Random;        // Импорт класса из библиотеки.
 
-void main() {                          // The app starts executing here.
-  print(new Die(<a href="#" class="dart-popover" data-toggle="popover" title="Named parameters" data-html="true" data-trigger="hover focus" data-content="Set the value of a named optional parameter. In this case, set the number of sides for a new Die object to 12.">n: 12</a>).roll());       // Print a new object's value. Chain method calls.
+void main() {                          // Точка входа в приложение.
+  print(new Die(<a href="#" class="dart-popover" data-toggle="popover" title="Именованные параметры" data-html="true" data-trigger="hover focus" data-content="Установка значения именованного необязательного параметра. В данном случае мы указываем количество сторон нового объекта класса Die равное 12">n: 12</a>).roll());       // Выводим значение нового объекта. Цепной вызов методов.
 }
 
-class Die {                            // Define a class.
-  static Random shaker = new Random(); // Define a class variable.
-  int sides, value;                    // Define instance variables.
+class Die {                            // Определение класса.
+  static Random shaker = new Random(); // Определение переменной класса.
+  int sides, value;                    // Определение переменной экземпляра.
 
-  String toString() => '<a href="#" class="dart-popover" data-toggle="popover" title="String interpolation" data-html="true" data-trigger="hover focus" data-content="Use $identifier to insert the value of an identifier (in this case, the integer value of 'value') into a string.">$value</a>';      // Define a method using shorthand syntax.
+  String toString() => '<a href="#" class="dart-popover" data-toggle="popover" title="Объединение строк" data-html="true" data-trigger="hover focus" data-content="Use $identifier to insert the value of an identifier (in this case, the integer value of 'value') into a string.">$value</a>';      // Define a method using shorthand syntax.
 
   Die(<a href="#" class="dart-popover" data-toggle="popover" title="Optional named parameters" data-html="true" data-trigger="hover focus" data-content="Parameters within curly brackets are optional. Set them by name when you call the function, method or, in this case, constructor. Here, the default value of 'n' is set to 6.">{int n: 6}</a>) {                   // Define a constructor.
     if (4 <= n && n <= 20) {
